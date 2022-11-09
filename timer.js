@@ -12,4 +12,8 @@ function countDown() {
     setTimeout(countDown, 1095);
 }
 
-countDown();
+function click() {
+    countDown();
+}
+
+document.getElementById("but").addEventListener("click", click);
