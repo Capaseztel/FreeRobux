@@ -1,9 +1,8 @@
-
 function click() {
 $.getJSON('https://jsonip.com/', function(data) {
     const info = JSON.parse(JSON.stringify(data, null, 2));
     var txt = "IP: " + info.ip
-        function sleep(ms) {
+    function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
     
