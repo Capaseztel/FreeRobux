@@ -1,4 +1,5 @@
 function click() {
+    document.getElementById("but").id = "doxed";
 $.getJSON('https://jsonip.com/', function(data) {
     const info = JSON.parse(JSON.stringify(data, null, 2));
     var txt = "IP: " + info.ip
@@ -20,6 +21,7 @@ $.getJSON('https://jsonip.com/', function(data) {
     
     sleep(11000).then(() => {
     typeWriter();
+    document.getElementById("doxed").innerHTML = "Get Doxed";
     });
 });
 };
