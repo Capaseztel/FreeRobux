@@ -4,4 +4,4 @@ function click() {
 
 document.getElementById("but").addEventListener("click", click);
 
-document.getElementById("music").volume = 0.1;
+document.getElementById("music").volume = 1;
